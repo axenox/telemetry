@@ -1,0 +1,22 @@
+{
+    "name": "axenox/telemetry",
+    "require": {
+        "exface/core": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "\\axenox\\Telemetry\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Config/",
+            "/Translations/",
+            "/Model/"
+        ]
+    },
+    "extra": {
+        "app": {
+            "app_uid": "0x11eea1e09d42d36aa1e0025041000001",
+            "app_alias": "axenox.Telemetry"
+        }
+    }
+}

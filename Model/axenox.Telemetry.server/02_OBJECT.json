@@ -81,7 +81,7 @@
     "rows": [
         {
             "CREATED_ON": "2024-02-04 21:26:22",
-            "MODIFIED_ON": "2024-02-07 21:18:30",
+            "MODIFIED_ON": "2024-02-08 10:01:23",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11eea85ba980fd38a85b025041000001",
@@ -112,9 +112,6 @@
                             },
                             {
                                 "attribute_alias": "client"
-                            },
-                            {
-                                "attribute_alias": "deployer_host_alias"
                             },
                             {
                                 "attribute_alias": "url"

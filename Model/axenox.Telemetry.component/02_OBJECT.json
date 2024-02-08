@@ -81,7 +81,7 @@
     "rows": [
         {
             "CREATED_ON": "2024-02-04 21:23:01",
-            "MODIFIED_ON": "2024-02-04 21:23:01",
+            "MODIFIED_ON": "2024-02-08 10:19:07",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11eea2e7323b9684a2e7025041000001",
@@ -96,7 +96,22 @@
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": null,
+            "DEFAULT_EDITOR_UXON": {
+                "widgets": [
+                    {
+                        "attribute_alias": "name"
+                    },
+                    {
+                        "attribute_alias": "latest_version"
+                    },
+                    {
+                        "attribute_alias": "recommended_version"
+                    },
+                    {
+                        "attribute_alias": "least_version"
+                    }
+                ]
+            },
             "ALIAS": "component",
             "DATA_ADDRESS": "component"
         }

@@ -1,0 +1,52 @@
+{
+    "uid": "0x11eea7ab9ba7bd90a7ab025041000001",
+    "alias_with_namespace": "axenox.telemetry.fill-in-checklists",
+    "menu_parent_page_selector": "0x11ee89d7d5408bbc89d7025041000001",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Fill in checklists",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+    "created_on": "2024-03-04 14:32:11",
+    "modified_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+    "modified_on": "2024-03-05 17:07:06",
+    "contents": {
+        "widget_type": "DataTable",
+        "object_alias": "axenox.Telemetry.checklist_data",
+        "columns": [
+            {
+                "attribute_alias": "server__LABEL"
+            },
+            {
+                "attribute_alias": "component__LABEL"
+            },
+            {
+                "attribute_alias": "checklist_version__checklist__name"
+            },
+            {
+                "attribute_alias": "checklist_version__version"
+            },
+            {
+                "attribute_alias": "form_data"
+            }
+        ],
+        "buttons": [
+            {
+                "action_alias": "axenox.Telemetry.NewChecklistData"
+            },
+            {
+                "action_alias": "axenox.Telemetry.EditChecklistData",
+                "bind_to_double_click": true
+            },
+            {
+                "action_alias": "exface.Core.ShowObjectCopyDialog"
+            },
+            {
+                "action_alias": "exface.Core.DeleteObject",
+                "visibility": "optional"
+            }
+        ]
+    }
+}

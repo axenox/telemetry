@@ -1,0 +1,204 @@
+{
+    "object_alias": "exface.Core.OBJECT_ACTION",
+    "columns": [
+        {
+            "name": "CREATED_ON",
+            "attribute_alias": "CREATED_ON"
+        },
+        {
+            "name": "MODIFIED_ON",
+            "attribute_alias": "MODIFIED_ON"
+        },
+        {
+            "name": "CREATED_BY_USER",
+            "attribute_alias": "CREATED_BY_USER"
+        },
+        {
+            "name": "MODIFIED_BY_USER",
+            "attribute_alias": "MODIFIED_BY_USER"
+        },
+        {
+            "name": "UID",
+            "attribute_alias": "UID"
+        },
+        {
+            "name": "OBJECT",
+            "attribute_alias": "OBJECT"
+        },
+        {
+            "name": "ACTION_PROTOTYPE",
+            "attribute_alias": "ACTION_PROTOTYPE"
+        },
+        {
+            "name": "ALIAS",
+            "attribute_alias": "ALIAS"
+        },
+        {
+            "name": "NAME",
+            "attribute_alias": "NAME"
+        },
+        {
+            "name": "SHORT_DESCRIPTION",
+            "attribute_alias": "SHORT_DESCRIPTION"
+        },
+        {
+            "name": "CONFIG_UXON",
+            "attribute_alias": "CONFIG_UXON"
+        },
+        {
+            "name": "APP",
+            "attribute_alias": "APP"
+        },
+        {
+            "name": "USE_IN_OBJECT_BASKET_FLAG",
+            "attribute_alias": "USE_IN_OBJECT_BASKET_FLAG"
+        },
+        {
+            "name": "DOCS",
+            "attribute_alias": "DOCS"
+        }
+    ],
+    "rows": [
+        {
+            "CREATED_ON": "2024-03-04 14:48:32",
+            "MODIFIED_ON": "2024-03-04 15:48:33",
+            "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+            "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+            "UID": "0x11eeb237e3f68192b237025041000001",
+            "OBJECT": "0x11eea3b3ff065e30a3b3025041000001",
+            "ACTION_PROTOTYPE": "exface\/core\/Actions\/ShowDialog.php",
+            "ALIAS": "NewChecklistData",
+            "NAME": "New",
+            "SHORT_DESCRIPTION": "",
+            "CONFIG_UXON": {
+                "icon": "plus",
+                "dialog": {
+                    "object_alias": "axenox.telemetry.checklist_data",
+                    "width": 2,
+                    "widgets": [
+                        {
+                            "attribute_alias": "component",
+                            "widget_type": "InputComboTable",
+                            "id": "component_id"
+                        },
+                        {
+                            "attribute_alias": "checklist_version",
+                            "widget_type": "InputComboTable",
+                            "caption": "Checklist",
+                            "filters": [
+                                {
+                                    "attribute_alias": "component",
+                                    "comparator": "==",
+                                    "value": "=component_id",
+                                    "hidden": true
+                                }
+                            ]
+                        },
+                        {
+                            "attribute_alias": "server",
+                            "widget_type": "InputComboTable"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "visibility": "promoted",
+                            "align": "opposite",
+                            "action": {
+                                "alias": "exface.core.CreateData",
+                                "object_alias": "axenox.telemetry.checklist_data",
+                                "input_mapper": {
+                                    "\/*": "",
+                                    "column_to_column_mappings": [
+                                        {
+                                            "from": "=USER('USERNAME')",
+                                            "to": "Ersteller"
+                                        }
+                                    ],
+                                    "*\/": ""
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "APP": "0x11eea1e09d42d36aa1e0025041000001",
+            "USE_IN_OBJECT_BASKET_FLAG": 0,
+            "DOCS": ""
+        },
+        {
+            "CREATED_ON": "2024-03-04 14:58:03",
+            "MODIFIED_ON": "2024-03-05 17:04:33",
+            "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+            "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+            "UID": "0x11eeae0b380eae98ae0b025041000001",
+            "OBJECT": "0x11eea3b3ff065e30a3b3025041000001",
+            "ACTION_PROTOTYPE": "exface\/core\/Actions\/ShowDialog.php",
+            "ALIAS": "EditChecklistData",
+            "NAME": "Edit",
+            "SHORT_DESCRIPTION": "",
+            "CONFIG_UXON": {
+                "icon": "plus",
+                "dialog": {
+                    "object_alias": "axenox.telemetry.checklist_data",
+                    "widgets": [
+                        {
+                            "attribute_alias": "server"
+                        },
+                        {
+                            "attribute_alias": "component"
+                        },
+                        {
+                            "attribute_alias": "checklist_version"
+                        },
+                        {
+                            "attribute_alias": "checklist_version",
+                            "widget_type": "InputForm",
+                            "required": true,
+                            "form_config_attribute_alias": "checklist_version__form_definition",
+                            "hide_caption": true,
+                            "width": "100%"
+                        }
+                    ],
+                    "buttons": [
+                        {
+                            "visibility": "promoted",
+                            "align": "opposite",
+                            "action": {
+                                "alias": "exface.core.UpdateData",
+                                "object_alias": "axenox.telemetry.checklist_data"
+                            }
+                        }
+                    ]
+                }
+            },
+            "APP": "0x11eea1e09d42d36aa1e0025041000001",
+            "USE_IN_OBJECT_BASKET_FLAG": 0,
+            "DOCS": ""
+        }
+    ],
+    "totals_rows": [],
+    "filters": {
+        "operator": "AND",
+        "base_object_alias": "exface.Core.OBJECT_ACTION",
+        "conditions": [
+            {
+                "expression": "APP",
+                "comparator": "=",
+                "value": "0x11eea1e09d42d36aa1e0025041000001",
+                "object_alias": "exface.Core.OBJECT_ACTION"
+            }
+        ]
+    },
+    "rows_limit": null,
+    "rows_offset": 0,
+    "sorters": [
+        {
+            "attribute_alias": "CREATED_ON",
+            "direction": "ASC"
+        },
+        {
+            "attribute_alias": "UID",
+            "direction": "ASC"
+        }
+    ]
+}

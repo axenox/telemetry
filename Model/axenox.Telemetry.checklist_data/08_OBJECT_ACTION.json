@@ -61,7 +61,7 @@
     "rows": [
         {
             "CREATED_ON": "2024-03-04 14:48:32",
-            "MODIFIED_ON": "2024-03-04 15:48:33",
+            "MODIFIED_ON": "2024-03-08 13:34:41",
             "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "UID": "0x11eeb237e3f68192b237025041000001",
@@ -73,6 +73,7 @@
             "CONFIG_UXON": {
                 "icon": "plus",
                 "dialog": {
+                    "widget_type": "Dialog",
                     "object_alias": "axenox.telemetry.checklist_data",
                     "width": 2,
                     "widgets": [
@@ -102,6 +103,7 @@
                     "buttons": [
                         {
                             "visibility": "promoted",
+                            "widget_type": "Button",
                             "align": "opposite",
                             "action": {
                                 "alias": "exface.core.CreateData",
@@ -127,7 +129,7 @@
         },
         {
             "CREATED_ON": "2024-03-04 14:58:03",
-            "MODIFIED_ON": "2024-03-05 17:04:33",
+            "MODIFIED_ON": "2024-03-08 12:58:02",
             "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "UID": "0x11eeae0b380eae98ae0b025041000001",
@@ -151,7 +153,7 @@
                             "attribute_alias": "checklist_version"
                         },
                         {
-                            "attribute_alias": "checklist_version",
+                            "attribute_alias": "form_data",
                             "widget_type": "InputForm",
                             "required": true,
                             "form_config_attribute_alias": "checklist_version__form_definition",

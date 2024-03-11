@@ -81,7 +81,7 @@
     "rows": [
         {
             "CREATED_ON": "2024-02-22 15:45:17",
-            "MODIFIED_ON": "2024-03-05 11:13:43",
+            "MODIFIED_ON": "2024-03-11 17:24:10",
             "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "UID": "0x11eeb40eff06706eb40e025041000001",
@@ -107,11 +107,31 @@
                                 "height": 2,
                                 "widgets": [
                                     {
-                                        "attribute_alias": "component",
-                                        "widget_type": "InputComboTable"
+                                        "attribute_alias": "checklist",
+                                        "widget_type": "InputComboTable",
+                                        "table": {
+                                            "object_alias": "axenox.Telemetry.checklist",
+                                            "columns": [
+                                                {
+                                                    "attribute_alias": "server__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "component__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "operation__LABEL"
+                                                },
+                                                {
+                                                    "attribute_alias": "description"
+                                                }
+                                            ]
+                                        }
                                     },
                                     {
-                                        "attribute_alias": "checklist"
+                                        "\/*": "",
+                                        "attribute_alias": "checklist__operation",
+                                        "widget_type": "InputComboTable",
+                                        "*\/": ""
                                     },
                                     {
                                         "attribute_alias": "version"

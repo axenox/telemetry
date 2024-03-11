@@ -11,33 +11,36 @@
     "created_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
     "created_on": "2024-03-04 14:32:11",
     "modified_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
-    "modified_on": "2024-03-05 17:07:06",
+    "modified_on": "2024-03-11 17:39:46",
     "contents": {
         "widget_type": "DataTable",
         "object_alias": "axenox.Telemetry.checklist_data",
         "columns": [
             {
-                "attribute_alias": "server__LABEL"
+                "attribute_alias": "server_component_log__server__LABEL"
             },
             {
-                "attribute_alias": "component__LABEL"
+                "attribute_alias": "checklist_version__checklist__component__LABEL"
             },
             {
-                "attribute_alias": "checklist_version__checklist__name"
+                "attribute_alias": "checklist_version__checklist__operation__LABEL"
             },
             {
                 "attribute_alias": "checklist_version__version"
             },
             {
-                "attribute_alias": "form_data"
+                "attribute_alias": "checklist_version__LABEL"
+            },
+            {
+                "attribute_alias": "server_component_log__installed_on"
             }
         ],
         "buttons": [
             {
-                "action_alias": "axenox.Telemetry.NewChecklistData"
+                "action_alias": "exface.core.ShowObjectCreateDialog"
             },
             {
-                "action_alias": "axenox.Telemetry.EditChecklistData",
+                "action_alias": "exface.core.ShowObjectEditDialog",
                 "bind_to_double_click": true
             },
             {

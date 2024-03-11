@@ -11,7 +11,7 @@
     "created_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
     "created_on": "2024-02-22 15:25:51",
     "modified_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
-    "modified_on": "2024-03-04 15:08:55",
+    "modified_on": "2024-03-11 17:32:16",
     "contents": {
         "widget_type": "SplitHorizontal",
         "object_alias": "axenox.Telemetry.checklist",
@@ -24,7 +24,24 @@
                         "object_alias": "axenox.Telemetry.checklist",
                         "columns": [
                             {
-                                "attribute_group_alias": "~VISIBLE"
+                                "attribute_alias": "name"
+                            },
+                            {
+                                "attribute_alias": "component__LABEL"
+                            },
+                            {
+                                "attribute_alias": "operation__LABEL"
+                            },
+                            {
+                                "attribute_alias": "description"
+                            },
+                            {
+                                "attribute_alias": "checklist_version__id:COUNT",
+                                "caption": "Versions"
+                            },
+                            {
+                                "attribute_alias": "checklist_version__version:MAX",
+                                "caption": "Current"
                             }
                         ],
                         "buttons": [
@@ -53,7 +70,16 @@
                         "object_alias": "axenox.Telemetry.checklist_version",
                         "columns": [
                             {
-                                "attribute_group_alias": "~VISIBLE"
+                                "attribute_alias": "checklist__name"
+                            },
+                            {
+                                "attribute_alias": "checklist__component__LABEL"
+                            },
+                            {
+                                "attribute_alias": "checklist__operation__LABEL"
+                            },
+                            {
+                                "attribute_alias": "version"
                             }
                         ],
                         "buttons": [

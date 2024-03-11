@@ -80,77 +80,25 @@
     ],
     "rows": [
         {
-            "CREATED_ON": "2024-02-22 15:45:17",
-            "MODIFIED_ON": "2024-03-11 17:52:11",
+            "CREATED_ON": "2024-03-08 16:59:27",
+            "MODIFIED_ON": "2024-03-08 17:02:47",
             "CREATED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
             "MODIFIED_BY_USER": "0x11e8fe1c902c8ebea23ee4b318306b9a",
-            "UID": "0x11eea3b3ff065e30a3b3025041000001",
+            "UID": "0x11eebee2d75952d6bee2025041000001",
             "READABLE_FLAG": 1,
             "WRITABLE_FLAG": 1,
             "COMMENTS": "",
             "DOCS": "",
-            "NAME": "Checklist data",
+            "NAME": "Operation",
             "INHERIT_DATA_SOURCE_BASE_OBJECT": 1,
             "DATA_SOURCE": "0x11ee8cfe55fd9a648cfe025041000001",
             "APP": "0x11eea1e09d42d36aa1e0025041000001",
             "SHORT_DESCRIPTION": "",
             "PARENT_OBJECT": "",
             "DATA_ADDRESS_PROPS": null,
-            "DEFAULT_EDITOR_UXON": {
-                "widget_type": "Dialog",
-                "widgets": [
-                    {
-                        "attribute_alias": "checklist_version",
-                        "widget_type": "InputComboTable",
-                        "id": "checklist_version_selector",
-                        "table": {
-                            "object_alias": "axenox.Telemetry.checklist_version",
-                            "columns": [
-                                {
-                                    "attribute_alias": "name"
-                                },
-                                {
-                                    "attribute_alias": "form_definition",
-                                    "hidden": true
-                                },
-                                {
-                                    "attribute_alias": "checklist__component",
-                                    "hidden": true
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "attribute_alias": "server_component_log",
-                        "widget_type": "InputComboTable",
-                        "table": {
-                            "object_alias": "axenox.Telemetry.server_component_log",
-                            "filters": [
-                                {
-                                    "attribute_alias": "component",
-                                    "value": "=checklist_version_selector!checklist__component",
-                                    "comparator": "=="
-                                }
-                            ],
-                            "columns": [
-                                {
-                                    "attribute_group_alias": "~DEFAULT_DISPLAY"
-                                }
-                            ]
-                        }
-                    },
-                    {
-                        "attribute_alias": "form_data",
-                        "widget_type": "InputForm",
-                        "form_config": "=checklist_version_selector!form_definition",
-                        "hide_caption": true,
-                        "height": "max",
-                        "width": 2
-                    }
-                ]
-            },
-            "ALIAS": "checklist_data",
-            "DATA_ADDRESS": "checklist_data"
+            "DEFAULT_EDITOR_UXON": null,
+            "ALIAS": "operation",
+            "DATA_ADDRESS": "operation"
         }
     ],
     "totals_rows": [],

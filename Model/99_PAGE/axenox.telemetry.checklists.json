@@ -1,0 +1,106 @@
+{
+    "uid": "0x11eea78047c22c24a780025041000001",
+    "alias_with_namespace": "axenox.telemetry.checklists",
+    "menu_parent_page_selector": "0x11ee89d7d5408bbc89d7025041000001",
+    "menu_index": 0,
+    "menu_visible": true,
+    "name": "Build checklists",
+    "description": "",
+    "intro": "",
+    "replaces_page_selector": null,
+    "created_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+    "created_on": "2024-02-22 15:25:51",
+    "modified_by_user_selector": "0x11e8fe1c902c8ebea23ee4b318306b9a",
+    "modified_on": "2024-03-11 17:32:16",
+    "contents": {
+        "widget_type": "SplitHorizontal",
+        "object_alias": "axenox.Telemetry.checklist",
+        "panels": [
+            {
+                "width": "50%",
+                "widgets": [
+                    {
+                        "widget_type": "DataTable",
+                        "object_alias": "axenox.Telemetry.checklist",
+                        "columns": [
+                            {
+                                "attribute_alias": "name"
+                            },
+                            {
+                                "attribute_alias": "component__LABEL"
+                            },
+                            {
+                                "attribute_alias": "operation__LABEL"
+                            },
+                            {
+                                "attribute_alias": "description"
+                            },
+                            {
+                                "attribute_alias": "checklist_version__id:COUNT",
+                                "caption": "Versions"
+                            },
+                            {
+                                "attribute_alias": "checklist_version__version:MAX",
+                                "caption": "Current"
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                            },
+                            {
+                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                "bind_to_double_click": true
+                            },
+                            {
+                                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                            },
+                            {
+                                "action_alias": "exface.Core.DeleteObject",
+                                "visibility": "optional"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "widgets": [
+                    {
+                        "widget_type": "DataTable",
+                        "object_alias": "axenox.Telemetry.checklist_version",
+                        "columns": [
+                            {
+                                "attribute_alias": "checklist__name"
+                            },
+                            {
+                                "attribute_alias": "checklist__component__LABEL"
+                            },
+                            {
+                                "attribute_alias": "checklist__operation__LABEL"
+                            },
+                            {
+                                "attribute_alias": "version"
+                            }
+                        ],
+                        "buttons": [
+                            {
+                                "action_alias": "exface.Core.ShowObjectCreateDialog"
+                            },
+                            {
+                                "action_alias": "exface.Core.ShowObjectEditDialog",
+                                "bind_to_double_click": true
+                            },
+                            {
+                                "action_alias": "exface.Core.ShowObjectCopyDialog"
+                            },
+                            {
+                                "action_alias": "exface.Core.DeleteObject",
+                                "visibility": "optional"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

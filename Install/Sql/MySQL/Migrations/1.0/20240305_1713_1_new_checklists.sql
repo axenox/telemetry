@@ -1,4 +1,4 @@
-CREATE TABLE `checklist` (
+CREATE TABLE IF NOT EXISTS `checklist` (
   `id` int NOT NULL AUTO_INCREMENT,
   `created_on` datetime NOT NULL DEFAULT (now()),
   `modified_on` datetime NOT NULL DEFAULT (now()),
@@ -14,22 +14,7 @@ CREATE TABLE `checklist` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
 
-CREATE TABLE `checklist_data` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `created_on` datetime NOT NULL DEFAULT (now()),
-  `modified_on` datetime NOT NULL DEFAULT (now()),
-  `created_by_user_oid` binary(16) NOT NULL,
-  `modified_by_user_oid` binary(16) NOT NULL,
-  `checklist_version_id` int NOT NULL,
-  `form_data` longtext CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
-  `server_component_log_id` int NOT NULL,
-  PRIMARY KEY (`id`) USING BTREE,
-  KEY `checklist_version_id` (`checklist_version_id`),
-  CONSTRAINT `checklist_data_ibfk_1` FOREIGN KEY (`checklist_version_id`) REFERENCES `checklist_version` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
-
-
-CREATE TABLE `checklist_version` (
+CREATE TABLE IF NOT EXISTS `checklist_version` (
   `id` int NOT NULL AUTO_INCREMENT,
   `created_on` datetime NOT NULL DEFAULT (now()),
   `modified_on` datetime NOT NULL DEFAULT (now()),
@@ -45,7 +30,22 @@ CREATE TABLE `checklist_version` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
 
 
-CREATE TABLE `operation` (
+CREATE TABLE IF NOT EXISTS `checklist_data` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `created_on` datetime NOT NULL DEFAULT (now()),
+  `modified_on` datetime NOT NULL DEFAULT (now()),
+  `created_by_user_oid` binary(16) NOT NULL,
+  `modified_by_user_oid` binary(16) NOT NULL,
+  `checklist_version_id` int NOT NULL,
+  `form_data` longtext CHARACTER SET utf8mb3 COLLATE utf8mb3_general_ci NOT NULL,
+  `server_component_log_id` int NOT NULL,
+  PRIMARY KEY (`id`) USING BTREE,
+  KEY `checklist_version_id` (`checklist_version_id`),
+  CONSTRAINT `checklist_data_ibfk_1` FOREIGN KEY (`checklist_version_id`) REFERENCES `checklist_version` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 ROW_FORMAT=DYNAMIC;
+
+
+CREATE TABLE IF NOT EXISTS `operation` (
   `created_on` datetime NOT NULL,
   `modified_on` datetime NOT NULL,
   `created_by_user_oid` binary(16) NOT NULL,

@@ -152,7 +152,7 @@
                         ],
                         "buttons": [
                             {
-                                "caption": "Install\/update",
+                                "caption": "Install/update",
                                 "bind_to_double_click": true,
                                 "action": {
                                     "alias": "exface.Core.ShowObjectCreateDialog",

@@ -2,6 +2,11 @@
     "object_alias": "exface.Core.OBJECT_BEHAVIORS",
     "columns": [
         {
+            "name": "_EXPORT_SUMMARY",
+            "hidden": true,
+            "attribute_alias": "NAME"
+        },
+        {
             "name": "CREATED_ON",
             "attribute_alias": "CREATED_ON"
         },
@@ -56,12 +61,13 @@
     ],
     "rows": [
         {
+            "_EXPORT_SUMMARY": "Optimistic locking",
             "CREATED_ON": "2024-02-04 21:17:50",
             "MODIFIED_ON": "2024-02-04 21:17:50",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11ee97aa7869c0fa97aa025041000001",
-            "BEHAVIOR": "exface\/Core\/Behaviors\/TimeStampingBehavior.php",
+            "BEHAVIOR": "exface/Core/Behaviors/TimeStampingBehavior.php",
             "CONFIG_UXON": {
                 "created_on_attribute_alias": "created_on",
                 "created_by_attribute_alias": "created_by_user",
@@ -76,12 +82,13 @@
             "PRIORITY": null
         },
         {
+            "_EXPORT_SUMMARY": "Object info",
             "CREATED_ON": "2024-02-04 21:20:11",
             "MODIFIED_ON": "2024-02-04 21:20:11",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
             "UID": "0x11ee8918cc7227288918025041000001",
-            "BEHAVIOR": "exface\/Core\/Behaviors\/GlobalActionsBehavior.php",
+            "BEHAVIOR": "exface/Core/Behaviors/GlobalActionsBehavior.php",
             "CONFIG_UXON": {
                 "buttons": [
                     {

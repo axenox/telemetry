@@ -1,5 +1,5 @@
 {
-    "object_alias": "exface.Core.APP",
+    "object_alias": "exface.Core.PAGE_GROUP_PAGES",
     "columns": [
         {
             "name": "_EXPORT_SUMMARY",
@@ -27,41 +27,36 @@
             "attribute_alias": "UID"
         },
         {
-            "name": "DEFAULT_LANGUAGE_CODE",
-            "attribute_alias": "DEFAULT_LANGUAGE_CODE"
+            "name": "PAGE",
+            "attribute_alias": "PAGE"
         },
         {
-            "name": "ALIAS",
-            "attribute_alias": "ALIAS"
-        },
-        {
-            "name": "NAME",
-            "attribute_alias": "NAME"
+            "name": "PAGE_GROUP",
+            "attribute_alias": "PAGE_GROUP"
         }
     ],
     "rows": [
         {
-            "_EXPORT_SUMMARY": "axenox Telemetry [axenox.Telemetry]",
-            "CREATED_ON": "2024-02-04 16:11:02",
-            "MODIFIED_ON": "2024-02-04 16:11:02",
+            "_EXPORT_SUMMARY": "Abnahme AN-Tiefbau / Build checklists",
+            "CREATED_ON": "2024-05-22 16:38:57",
+            "MODIFIED_ON": "2024-05-22 16:38:57",
             "CREATED_BY_USER": "0x31000000000000000000000000000000",
             "MODIFIED_BY_USER": "0x31000000000000000000000000000000",
-            "UID": "0x11eea1e09d42d36aa1e0025041000001",
-            "DEFAULT_LANGUAGE_CODE": "en",
-            "ALIAS": "axenox.Telemetry",
-            "NAME": "axenox Telemetry"
+            "UID": "0x11efa070059ec5eea070025041000001",
+            "PAGE": "0x11eea78047c22c24a780025041000001",
+            "PAGE_GROUP": "0x11ecb2c06c3b8e6cb2c0747827c0cc68"
         }
     ],
     "totals_rows": [],
     "filters": {
         "operator": "AND",
-        "base_object_alias": "exface.Core.APP",
+        "base_object_alias": "exface.Core.PAGE_GROUP_PAGES",
         "conditions": [
             {
-                "expression": "UID",
+                "expression": "PAGE__APP",
                 "comparator": "=",
                 "value": "0x11eea1e09d42d36aa1e0025041000001",
-                "object_alias": "exface.Core.APP"
+                "object_alias": "exface.Core.PAGE_GROUP_PAGES"
             }
         ]
     },
